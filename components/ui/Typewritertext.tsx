@@ -1,5 +1,4 @@
 // components/TypewriterText.tsx
-'use client';
 
 import { useState, useEffect } from 'react';
 
@@ -14,7 +13,6 @@ export function TypewriterText({ text, speed = 20 }: TypewriterTextProps) {
 
   useEffect(() => {
     if (currentIndex < text.length) {
-      const timeout = setTimeout(() => {
         setDisplayedText(prev => prev + text[currentIndex]);
         setCurrentIndex(currentIndex + 1);
       }, speed);
@@ -23,7 +21,6 @@ export function TypewriterText({ text, speed = 20 }: TypewriterTextProps) {
     }
   }, [currentIndex, text, speed]);
 
-  useEffect(() => {
     setDisplayedText('');
     setCurrentIndex(0);
   }, [text]);

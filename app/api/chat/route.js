@@ -17,7 +17,6 @@ const fetchWithRetry = async (url, options) => {
 
     clearTimeout(timeoutId);
 
-    if (!response.ok) {
       const errorData = await response.json().catch(() => ({}));
       throw new Error(errorData.detail || `HTTP error! status: ${response.status}`);
     }
@@ -79,7 +78,6 @@ export async function POST(req) {
       if (error.cause?.code === 'UND_ERR_CONNECT_TIMEOUT') {
         return NextResponse.json(
           { 
-            error: 'Unable to connect to the backend server. Please try again later.',
             retryable: true 
           },
           { status: 503 }
