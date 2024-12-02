@@ -8,7 +8,6 @@ import { cn } from "@/lib/utils";
 export interface AnimatedBeamProps {
   className?: string;
   containerRef: RefObject<HTMLElement | null>; // Container ref
-  fromRef: RefObject<HTMLElement | null>;
   toRef: RefObject<HTMLElement | null>;
   curvature?: number;
   reverse?: boolean;
@@ -141,7 +140,6 @@ export const AnimatedBeam: React.FC<AnimatedBeamProps> = ({
         strokeWidth={pathWidth}
         strokeOpacity={pathOpacity}
         strokeLinecap="round"
-      />
       <path
         d={pathD}
         strokeWidth={pathWidth}
