@@ -6,7 +6,6 @@ interface IntegrationButtonProps {
   label: string;
   color: string;
   onClick: () => void;
-}
 
 export const IntegrationButton = ({ Icon, label, color, onClick }: IntegrationButtonProps) => (
     className="flex items-center gap-2 px-4 py-2 rounded-md border border-gray-200 bg-white "
@@ -16,5 +15,4 @@ export const IntegrationButton = ({ Icon, label, color, onClick }: IntegrationBu
     style={{ color: color }}
     <Icon size={24} /> 
     <span className="text-sm font-medium font-offbit">{label}</span>
-  </motion.button>
 );
