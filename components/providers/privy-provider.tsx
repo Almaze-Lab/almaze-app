@@ -18,7 +18,6 @@ export function Providers({ children }: { children: ReactNode }) {
   return (
     <PrivyProvider 
         appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID || ''}
-        config={{
         "appearance": {
           "accentColor": "#6A6FF5",
           "theme":"#FFFFFF",
@@ -46,7 +45,5 @@ export function Providers({ children }: { children: ReactNode }) {
         }
       }}
       >
-        {children}
-      </PrivyProvider>
   );
 }

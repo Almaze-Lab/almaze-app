@@ -113,7 +113,6 @@ export default function RoadmapSection() {
                     fill="#1DA2FF"
                   />
                 </svg>
-
                 <p className="mt-3 mb-2 text-xs font-medium text-[#1DA2FF]">
                   Q2 2025
                 </p>
@@ -284,5 +283,4 @@ export default function RoadmapSection() {
         </div>
       </motion.div>
     </section>
-  );
 }
