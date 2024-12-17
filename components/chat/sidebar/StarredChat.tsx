@@ -21,14 +21,12 @@ export const StarredChat = ({ title, isStarred, onClick, onStar }: StarredChatPr
     <span className="text-sm text-gray-700 truncate">{title}</span>
     <Star 
       className={`w-4 h-4 ${isStarred ? 'text-blue-500' : 'text-gray-300 opacity-0 group-hover:opacity-100'}`}
-      onClick={(e) => {
         e.stopPropagation();
         onStar(e);
       }}
     />
   </motion.button>
 );
-
 
 
 interface SidebarHeaderProps {
@@ -47,7 +45,6 @@ export const SidebarHeader = ({ onNewChat, logo }: SidebarHeaderProps) => (
           <a href="https://almaze.gitbook.io/docs/" target='_blank'>
             <SiGitbook className='cursor-pointer text-gray-600 hover:text-gray-800 transition-colors'/>
           </a>
-          <a href="https://github.com/Almaze-Labs" target='_blank'>
             <SiGithub className='cursor-pointer text-gray-600 hover:text-gray-800 transition-colors'/>
           </a>
         </div>

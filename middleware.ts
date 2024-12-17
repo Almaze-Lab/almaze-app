@@ -1,7 +1,9 @@
+import { NextRequest, NextResponse } from "next/server";
 
 export function middleware(request: NextRequest) {
   // console.log("Request Pathname:", request.nextUrl.pathname);
   // console.log("Authentication Cookie:", request.cookies.get("privy-authenticated")?.value);
+
   const { pathname } = request.nextUrl;
 
   // List of restricted routes
