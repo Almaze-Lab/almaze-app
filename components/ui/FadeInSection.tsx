@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 
 interface FadeInSectionProps {
+  children: React.ReactNode;
   direction?: 'up' | 'down' | 'left' | 'right';
   className?: string;
 }
@@ -19,6 +20,7 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({
     }, { threshold: 0.1 });
 
     const { current } = domRef;
+    if (current) observer.observe(current);
 
     return () => {
       if (current) observer.unobserve(current);
@@ -36,6 +38,7 @@ export const FadeInSection: React.FC<FadeInSectionProps> = ({
       className={`transition-all duration-1000 transform ${directionClasses[direction]} 
         ${isVisible ? 'opacity-100 translate-y-0 translate-x-0' : 'opacity-0'}
         ${className}`}
+    >
       {children}
     </div>
   );
