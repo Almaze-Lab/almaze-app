@@ -11,7 +11,6 @@ import React, { useState } from "react";
  * @param squaresClassName - The class name of the squares.
  */
 interface InteractiveGridPatternProps extends React.SVGProps<SVGSVGElement> {
-  width?: number;
   height?: number;
   squares?: [number, number]; // [horizontal, vertical]
   className?: string;
@@ -24,7 +23,6 @@ interface InteractiveGridPatternProps extends React.SVGProps<SVGSVGElement> {
  */
 export function InteractiveGridPattern({
   width = 40,
-  height = 40,
   squares = [100, 100],
   className,
   squaresClassName,

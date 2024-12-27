@@ -17,9 +17,11 @@ interface TypewriterTextProps {
       } else {
         setIsTyping(false);
         setTimeout(() => {
+          setDisplayedText('');
         }, 3000);
       }
     }
+  }, [displayedText, isTyping, text]);
   return (
     <span className="border-r-2 border-black animate-pulse">
       {displayedText}
