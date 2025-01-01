@@ -13,12 +13,9 @@ export default function Home() {
     <Providers>
     <main>
       <Header />
-      <HeroSection />
       <FeaturesSection />
-      <AgentsSection />
       <TokenomicsSection />
       <RoadmapSection />
-      {/* <CTABox /> */}
       <Footer />
     </main>
     </Providers>
