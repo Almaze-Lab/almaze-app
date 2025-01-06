@@ -26,7 +26,6 @@ const MessageBubble = ({ message, userName, avatarConfig }: MessageBubbleProps) 
 
   const handleCopy = async () => {
     try {
-      await navigator.clipboard.writeText(message.content);
       setIsCopied(true);
       setTimeout(() => setIsCopied(false), 2000);
     } catch (err) {
@@ -66,7 +65,6 @@ const MessageBubble = ({ message, userName, avatarConfig }: MessageBubbleProps) 
     hover: { 
       scale: 1.2,
       rotate: 360,
-      transition: { duration: 0.5 }
     }
   };
 
