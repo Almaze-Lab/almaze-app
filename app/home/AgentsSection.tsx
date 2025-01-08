@@ -1,6 +1,5 @@
 "use client";
 import { useRef } from "react";
-import { JSX } from "react/jsx-runtime";
 import Image from "next/image";
 import img1 from "@/public/assets/images/agents-section-1.png"
 import { TypingAnimation } from "@/components/home/magicui/typing-animation";
@@ -13,7 +12,6 @@ interface IAgent {
   title: string;
   description: string;
 }
-
 export default function AgentsSection() {
   const containerRef = useRef<HTMLDivElement>(null);
   const logoRef = useRef<HTMLDivElement>(null);
@@ -246,7 +244,6 @@ export default function AgentsSection() {
           <AnimatedBeam
             containerRef={containerRef}
             fromRef={div4Ref}
-            toRef={logoRef}
             duration={3}
             curvature={350}
             pathColor="#9700F4"
