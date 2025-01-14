@@ -132,13 +132,11 @@ const LoginContent = memo(function LoginContent() {
       <BackgroundEffect />
 
       <div className="relative min-h-screen flex items-center justify-center p-4">
-        <div className="w-full max-w-md">
           <div className="relative p-8 rounded-2xl overflow-hidden">
             {/* Card backdrop blur effect */}
             <div className="absolute inset-0 bg-white/40 backdrop-blur-xl rounded-2xl" />
             
             {/* Content */}
-            <div className="relative">
               <div className="text-center mb-10">
                 <h1 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-b from-gray-800 to-gray-600 mb-3">
                   ALMAZE
@@ -178,7 +176,6 @@ const LoginContent = memo(function LoginContent() {
           </div>
 
           <div className="mt-8 grid grid-cols-3 gap-4">
-            <FeatureCard text="Secure Storage" />
             <FeatureCard text="Fast Transactions" />
             <FeatureCard text="24/7 Support" />
           </div>
