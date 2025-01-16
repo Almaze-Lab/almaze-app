@@ -1,6 +1,4 @@
 "use client";
-import { TypingAnimation } from "@/components/home/magicui/typing-animation";
-import { FlickeringGrid } from "@/components/home/magicui/flickering-grid";
 import { usePrivy } from "@privy-io/react-auth";
 import { useEffect } from "react";
 import Cookies from 'js-cookie';
