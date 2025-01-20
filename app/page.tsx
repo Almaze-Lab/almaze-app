@@ -8,12 +8,9 @@ import TokenomicsSection from "@/app/home/TokenomicsSection";
 import RoadmapSection from "@/app/home/RoadmapSection";
 import { Providers } from "@/components/providers/privy-provider";
 
-export default function Home() {
   return (
     <Providers>
     <main>
-      <Header />
-      <FeaturesSection />
       <TokenomicsSection />
       <RoadmapSection />
       <Footer />
