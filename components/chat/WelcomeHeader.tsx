@@ -1,3 +1,4 @@
+interface WelcomeHeaderProps {
   name: string;
   version: string;
 }
