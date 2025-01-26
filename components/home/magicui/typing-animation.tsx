@@ -73,7 +73,6 @@ export function TypingAnimation({
 
   return (
     <MotionComponent ref={elementRef} className={cn("", className)} {...props}>
-      {displayedText}
     </MotionComponent>
   );
 }
