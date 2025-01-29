@@ -112,7 +112,6 @@ const MessageBubble = ({ message, userName, avatarConfig }: MessageBubbleProps) 
           </span>
           <span className="text-xs text-gray-400">
             {new Date(message.timestamp).toLocaleTimeString()}
-          </span>
         </motion.div>
         
         <motion.div 
@@ -163,7 +162,6 @@ const MessageBubble = ({ message, userName, avatarConfig }: MessageBubbleProps) 
                     return (
                       <code 
                         className={`${isUser ? 'bg-blue-400/50' : 'bg-gray-100'} rounded px-1 py-0.5 text-sm`} 
-                        {...props}
                       >
                         {children}
                       </code>
@@ -230,7 +228,6 @@ const MessageBubble = ({ message, userName, avatarConfig }: MessageBubbleProps) 
           <Avatar style={{ width: '2.5rem', height: '2.5rem' }} {...avatarConfig} />
         </motion.div>
       )}
-    </motion.div>
   );
 };
 
