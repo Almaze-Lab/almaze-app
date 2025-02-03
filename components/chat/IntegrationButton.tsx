@@ -3,7 +3,6 @@ import { LucideIcon } from "lucide-react";
 
 interface IntegrationButtonProps {
   Icon: LucideIcon;
-  label: string;
   color: string;
   onClick: () => void;
 
@@ -12,7 +11,5 @@ export const IntegrationButton = ({ Icon, label, color, onClick }: IntegrationBu
     onClick={onClick}
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.95 }}
-    style={{ color: color }}
     <Icon size={24} /> 
-    <span className="text-sm font-medium font-offbit">{label}</span>
 );
