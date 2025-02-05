@@ -132,6 +132,7 @@ const LoginContent = memo(function LoginContent() {
       <BackgroundEffect />
 
       <div className="relative min-h-screen flex items-center justify-center p-4">
+        <div className="w-full max-w-md">
           <div className="relative p-8 rounded-2xl overflow-hidden">
             {/* Card backdrop blur effect */}
             <div className="absolute inset-0 bg-white/40 backdrop-blur-xl rounded-2xl" />
